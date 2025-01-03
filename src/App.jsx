@@ -9,6 +9,7 @@ import ImageModal from "./components/ImageModal/ImageModal";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import Loader from "./components/Loader/Loader";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
+import Modal from "react-modal";
 
 function App() {
   const [gallery, setGallery] = useState([]);
@@ -80,7 +81,7 @@ function App() {
         <ImageGallery
           gallery={gallery}
           openModal={openModal}
-          updateModalStateData={updateModalState}
+          updateModalState={updateModalState}
         />
       )}
       {Loading && <Loader />}

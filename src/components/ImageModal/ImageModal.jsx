@@ -7,9 +7,9 @@ const ImageModal = ({ modalIsOpen, closeModal, src, alt }) => {
       onRequestClose={closeModal}
       className={css.modal}
       overlayClassName={css.overlay}
+      ariaHideApp={false}
     >
       <button onClick={closeModal} className={css.modalBtn}>
-        {" "}
         &times;
       </button>
       <div>

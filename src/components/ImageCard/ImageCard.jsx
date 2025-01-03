@@ -19,9 +19,7 @@ const ImageCard = ({ alt_description, urls, updateModalState }) => {
   return (
     <div
       className={css.cardWrapper}
-      onClick={() =>
-        updateModalState(urls.regular, alt_description || "No description")
-      }
+      onClick={() => updateModalState(urls.regular, alt_description)}
     >
       <img
         className={css.cardImage}
