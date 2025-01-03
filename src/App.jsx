@@ -28,6 +28,9 @@ function App() {
     if (!queryValue) return;
 
     const handleSearch = async () => {
+      setLoading(true);
+
+      setError(null);
       try {
         setLoading(true);
         const data = await fetchGallery(queryValue, page);
